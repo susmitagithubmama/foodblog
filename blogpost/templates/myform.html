@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form  action="" method="POST" novalidate>
+       <!-- <p> {{form.sname.label}}
+        {{form.sname}} </p>
+        <p>
+        {{form.semail.label}}
+        {{form.semail}}
+    </p> -->
+        {% csrf_token %}
+        {{form.as_p}}
+        <!-- {{form.as_p}} -->
+        <!-- <ul>
+
+            {{form.as_ul}}
+        </ul> -->
+
+        <button >Submit</button>
+    </form>
+</body>
+</html>
